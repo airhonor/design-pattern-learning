@@ -1,5 +1,7 @@
 package com.hz.design.pattern.observer;
 
+import java.util.Date;
+
 /**
  * @program: design-pattern-learning
  * @author: zgr
@@ -16,16 +18,16 @@ public class MainClass {
 
         concreteSubject.notifyAll("有内鬼");
 
-//        System.out.println("---------------------分界线----------------------");
-//
-//        ConcreteSource concreteSource = new ConcreteSource();
-//
-//        TvObserver tvObserver = new TvObserver();
-//        AttachFishObserver attachFishObserver = new AttachFishObserver();
-//
-//        concreteSource.addListener(tvObserver, "stopWatchTv", "你老妈回来了");
-//        concreteSource.addListener(attachFishObserver, "stopAttachFish", new Date());
-//
-//        concreteSource.subscribeNotice();
+        System.out.println("---------------------分界线----------------------");
+
+        ConcreteSource concreteSource = new ConcreteSource();
+
+        TvObserver tvObserver = new TvObserver();
+        AttachFishObserver attachFishObserver = new AttachFishObserver();
+
+        concreteSource.addListener(tvObserver, "stopWatchTv", "你老妈回来了");
+        concreteSource.addListener(attachFishObserver, "stopAttachFish", new Date());
+
+        concreteSource.subscribeNotice();
     }
 }
