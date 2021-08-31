@@ -18,9 +18,4 @@ public class ConcreteSource implements Source{
     public void subscribeNotice() throws Exception {
         eventHandler.subscribeNotice();
     }
-
-    @Override
-    public void subscribeNoticeToOne() {
-
-    }
 }

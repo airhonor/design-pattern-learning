@@ -21,6 +21,4 @@ public interface Source {
      * @throws Exception
      */
     void subscribeNotice() throws Exception;
-
-    void subscribeNoticeToOne();
 }
